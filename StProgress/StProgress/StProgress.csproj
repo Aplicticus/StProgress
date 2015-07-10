@@ -127,6 +127,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>StProgressDB.mdf</DependentUpon>
     </Content>
+    <Content Include="Resources\Scripts\CREATE TABLE tbAlg.sql" />
+    <Content Include="Resources\Scripts\CREATE TABLE tbAppOnt.sql" />
+    <Content Include="Resources\Scripts\CREATE TABLE tbMedOnt.sql" />
     <Content Include="Resources\Scripts\CREATE TABLE tbStudent.sql" />
   </ItemGroup>
   <ItemGroup>
