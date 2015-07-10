@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StProgress.SQL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace StProgress
         public frmLogin()
         {
             InitializeComponent();
+            SqlConnectionManager mgr = new SqlConnectionManager();
+            DataSet DS = mgr.GetDataset("SELECT * FROM tbStudent");
         }
     }
 }
