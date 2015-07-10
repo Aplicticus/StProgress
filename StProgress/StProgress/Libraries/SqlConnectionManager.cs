@@ -37,5 +37,13 @@ namespace StProgress.SQL
             sqlDA.Fill(DS);
             return DS;
         }
+
+        public DataTable GetDataTable(string sqlQuery)
+        {
+            DataTable DT = new DataTable();
+            sqlDA = new SqlDataAdapter(sqlQuery, sqlConn);
+            sqlDA.Fill(DT);
+            return DT;
+        }
     }
 }

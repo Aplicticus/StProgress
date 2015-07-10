@@ -67,7 +67,7 @@
     </Compile>
     <Compile Include="ProgramStart\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SQL\SqlConnectionManager.cs" />
+    <Compile Include="Libraries\SqlConnectionManager.cs" />
     <EmbeddedResource Include="ProgramStart\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
