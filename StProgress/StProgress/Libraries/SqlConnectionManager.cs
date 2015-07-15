@@ -20,22 +20,12 @@ namespace StProgress.SQL
             sqlConn = new SqlConnection(sqlConnectionString);            
         }
 
-        public void OpenConnection()
-        {
-            sqlConn.Open();
-        }
-
-        public void CloseConnection()
-        {
-            sqlConn.Close();
-        }
-
         public DataSet GetDataset(string sqlQuery)
         {
             DataSet DS = new DataSet();
             sqlDA = new SqlDataAdapter(sqlQuery, sqlConn);
             sqlDA.Fill(DS);
-            return DS;
+            return DS;            
         }
 
         public DataTable GetDataTable(string sqlQuery)
@@ -44,6 +34,15 @@ namespace StProgress.SQL
             sqlDA = new SqlDataAdapter(sqlQuery, sqlConn);
             sqlDA.Fill(DT);
             return DT;
+        }
+
+        public void WriteQuery(string sqlQuery)
+        {
+
+        }
+        public void ReadQuery(string sqlQuery)
+        {
+
         }
     }
 }
